@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import heroImg from "../assets/hero-bg.jpg"; // make sure you add a real image in assets
+import heroImg from "../assets/hero-bg.jpg"; // make sure you have an actual image
 import { Link } from "react-router-dom";
 
 export default function Hero() {
@@ -11,30 +11,45 @@ export default function Hero() {
     >
       {/* Overlay for better text contrast */}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative text-center px-4 max-w-3xl"
+        className="relative text-center px-4 max-w-3xl space-y-4"
       >
-        <h1 className="text-5xl md:text-6xl font-bold mb-4 text-blue-100">
+        <h1 className="text-5xl md:text-6xl font-bold mb-2 text-blue-100">
           Build Your Dream Home
         </h1>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-blue-100">
+        <h1 className="text-4xl md:text-5xl font-bold mb-2 text-blue-100">
           बनाए अपने सपनों का घर
         </h1>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">
-            Tomar Properties Muzaffarnagar
-          </h1>
-<p className="text-xl md:text-2xl mb-6 text-amber-200">
-  मुजफ्फरनगर में घर खरीदने, बेचने और बनाने के लिए आपका विश्वसनीय साथी
-</p>
-        <Link
-          to="/services"
-          className="bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:scale-105 transition transform"
-        >
-          Explore our Services
-        </Link>
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">
+          Tomar Properties Muzaffarnagar
+        </h1>
+        <p className="text-xl md:text-2xl mb-6 text-amber-200">
+          मुजफ्फरनगर में घर खरीदने, बेचने और बनाने के लिए आपका विश्वसनीय साथी
+        </p>
+
+        {/* Buttons */}
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-4">
+          <Link
+            to="/services"
+            className="bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:scale-105 transition transform"
+          >
+            Explore our Services
+          </Link>
+
+          {/* Contact Us Button */}
+          <a
+            href="https://forms.gle/G8vMq1S5RTyPjBeN9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-green-500 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:scale-105 transition transform"
+          >
+            Contact Us
+          </a>
+        </div>
       </motion.div>
     </section>
   );
