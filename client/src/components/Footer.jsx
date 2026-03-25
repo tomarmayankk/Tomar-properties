@@ -45,32 +45,21 @@ export default function Footer() {
 
       {/* Social Icons */}
       <div className="flex justify-center gap-6 mb-4">
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-400 transition"
-        >
-          <Globe size={24} />
-        </a>
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-pink-400 transition"
-        >
-          <Camera size={24} />
-        </a>
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-500 transition"
-        >
-          <Briefcase size={24} />
-        </a>
+{/* Instagram Only */}
+<div className="flex justify-center mb-4">
+  <a
+    href="https://www.instagram.com/tomarpropertydealer/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-pink-400 transition flex items-center gap-2"
+  >
+    <p className="text-2xl">
+      Follow us on Instagram
+    </p>
+    <span className="text-sm">@tomarpropertydealer</span>
+  </a>
+</div>
       </div>
-
       {/* Copyright */}
       <p className="text-sm text-gray-400 text-center">
         © {new Date().getFullYear()} Tomar Properties. All rights reserved.
