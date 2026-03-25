@@ -17,17 +17,23 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
         className="relative text-center px-4 max-w-3xl"
       >
-        <h1 className="text-5xl md:text-6xl font-bold mb-4">
-          Find. Build. Own. In Muzaffarnagar
+        <h1 className="text-5xl md:text-6xl font-bold mb-4 text-blue-100">
+          Build Your Dream Home
         </h1>
-        <p className="text-xl md:text-2xl mb-6">
-          Your trusted partner for buying, selling, and constructing homes in Muzaffarnagar
-        </p>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-blue-100">
+          बनाए अपने सपनों का घर
+        </h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">
+            Tomar Properties Muzaffarnagar
+          </h1>
+<p className="text-xl md:text-2xl mb-6 text-amber-200">
+  मुजफ्फरनगर में घर खरीदने, बेचने और बनाने के लिए आपका विश्वसनीय साथी
+</p>
         <Link
           to="/services"
           className="bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:scale-105 transition transform"
         >
-          Explore Services
+          Explore our Services
         </Link>
       </motion.div>
     </section>
